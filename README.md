@@ -6,7 +6,13 @@ A simple project to help developers remember the unsung heroes of the open sourc
 
 Every day, developers use dozens of open source packages that make our work possible. Behind each package are maintainers who often work for free, in their spare time, to create tools that power the modern web.
 
-This project helps you remember to say "thank you" by automatically drafting appreciation tweets when you add new packages to your projects.
+This project helps you remember to say "thank you" by automatically drafting appreciation tweets when you:
+- Add new packages to your projects
+- Make significant use of existing packages (performance improvements, bug fixes)
+- Solve complex problems using open source tools
+- Discover creative ways to combine packages
+
+Whether it's a first-time integration or leveraging a package in a new way, every meaningful use deserves recognition. The tool creates draft tweets - little reminders for you to show appreciation - that you can fine-tune and post whenever you're ready. Think of it as your personal gratitude assistant, making it effortless to acknowledge the heroes behind the code.
 
 ## How It Works
 
