@@ -16,6 +16,22 @@ This project helps you remember to say "thank you" by automatically drafting app
 
 Whether it's a first-time integration or leveraging a package in a new way, every meaningful use deserves recognition. The tool creates draft tweets - little reminders for you to show appreciation - that you can fine-tune and post whenever you're ready. Think of it as your personal gratitude assistant, making it effortless to acknowledge the heroes behind the code.
 
+### Example Tweet Drafts
+
+**Commit:** `Add React Query for data fetching`
+```
+🚀 Just integrated React Query into our dashboard! The caching and 
+background refetching is incredible. Huge thanks to everyone who 
+maintains this game-changing library! #React #OpenSource
+```
+
+**Commit:** `Fix memory leak using new WeakMap implementation`
+```
+🔧 WeakMap just saved us from a nasty memory leak! Amazing how the 
+right data structure makes all the difference. Appreciation to all 
+the JS engine maintainers who make features like this possible! 🙏
+```
+
 ## How It Works
 
 ### Automatic Mode (Background)
