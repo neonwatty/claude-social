@@ -1,5 +1,7 @@
 # Claude's Thank You Reminders 💌
 
+*Make every commit a thank you*
+
 A simple project to help developers remember the unsung heroes of the open source world, by making it easy to recognize and give them shout outs on social media.
 
 ## Why This Exists
