@@ -90,9 +90,14 @@ packages: ["discourse_api"]
 
 ## Manual Generation with /social-post
 
-Users can manually trigger post generation using the slash command:
+Users can manually trigger post generation using the slash command, which spawns a subagent:
 
 `/social-post [options]`
+
+The command uses a subagent to:
+- Keep your main conversation focused
+- Generate tweets in the background
+- Return just the preview without cluttering context
 
 ### Options:
 - `commit:[sha]` - Generate for specific commit
@@ -109,11 +114,23 @@ Users can manually trigger post generation using the slash command:
 ```
 
 ### Slash Command Behavior:
-1. Analyzes the specified content
-2. Identifies packages worth appreciating
-3. Generates 2 tweet drafts
-4. Saves to `.social/tweets/manual-YYYY-MM-DD-HH-MM-SS.md`
-5. Shows preview of generated tweets
+1. Spawns a subagent using the Task tool
+2. Subagent analyzes the specified content
+3. Subagent identifies packages worth appreciating
+4. Subagent generates 2 tweet drafts
+5. Subagent saves to `.social/tweets/manual-YYYY-MM-DD-HH-MM-SS.md`
+6. Returns preview of generated tweets to main conversation
+
+### Subagent Task for Slash Command:
+```
+Execute /social-post command with arguments: [type]:[value]
+
+1. Analyze the requested content (commit/package/feature/last n commits)
+2. Identify packages worth appreciating
+3. Generate 2 tweet drafts following Open Source Heroes guidelines
+4. Save to .social/tweets/manual-[timestamp].md
+5. Return the generated tweets for preview
+```
 
 ### Manual Generation File Format:
 ```markdown

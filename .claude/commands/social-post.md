@@ -27,9 +27,13 @@ Generate appreciation tweets for open source maintainers based on your code usag
 
 ## What it does
 
-1. Analyzes the specified content for package usage
-2. Generates 2 draft tweets focused on thanking maintainers
-3. Saves drafts to `.social/tweets/manual-[timestamp].md`
-4. Shows a preview of the generated tweets
+This command spawns a subagent to:
+
+1. Analyze the specified content for package usage
+2. Generate 2 draft tweets focused on thanking maintainers
+3. Save drafts to `.social/tweets/manual-[timestamp].md`
+4. Return a preview of the generated tweets
+
+Using a subagent keeps your main conversation clean and focused while tweets are generated in the background.
 
 The tweets focus on appreciation and recognition of open source maintainers' work.
