@@ -10,10 +10,24 @@ This project helps you remember to say "thank you" by automatically drafting app
 
 ## How It Works
 
-1. **Automatic Detection**: When you commit code that adds a new package, this system notices
-2. **Draft Generation**: It creates tweet drafts that thank the maintainers
-3. **Your Choice**: Review the drafts and post the ones you like
-4. **Spread Gratitude**: Help maintainers know their work is valued
+### Automatic Mode (Background)
+1. **Subagent Analysis**: When you commit code, Claude spawns a subagent to analyze changes
+2. **Smart Detection**: The subagent identifies new packages or significant package usage
+3. **Draft Generation**: If worthy (score ≥ 7), it creates appreciation tweet drafts
+4. **Non-Intrusive**: All happens in the background without interrupting your workflow
+
+### Manual Mode (On-Demand)
+Use the `/social-post` slash command to generate tweets whenever you want:
+- `/social-post commit:abc123` - For a specific commit
+- `/social-post package:react-query` - Appreciate a specific package
+- `/social-post feature:"real-time updates"` - For features using packages
+- `/social-post last:5` - Review recent commits
+
+### Always Your Choice
+- Review generated drafts in `.social/tweets/`
+- Edit as needed
+- Post only what you're comfortable sharing
+- Help maintainers feel valued
 
 ## Setup
 
@@ -21,6 +35,14 @@ This project helps you remember to say "thank you" by automatically drafting app
 2. Add the CLAUDE.md instructions to your workflow
 3. Add `.social/` to your .gitignore
 4. Commit normally - appreciation drafts appear automatically
+
+## Why Subagents?
+
+The automatic analysis uses Claude's Task tool to spawn subagents because:
+- **Preserves Context**: Your main conversation stays focused on your primary work
+- **Background Processing**: Tweet generation happens without interrupting you
+- **Efficient**: Only uses resources when commits contain packages worth appreciating
+- **Clean Output**: No clutter in your main chat about tweet generation
 
 ## Philosophy
 
