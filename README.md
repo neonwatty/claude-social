@@ -1,4 +1,4 @@
-# Open Source Heroes 🦸‍♀️🦸‍♂️
+# Claude's Thank You Reminders 💌
 
 A simple project to help developers remember the unsung heroes of the open source world, by making it easy to recognize and give them shout outs on social media.
 
