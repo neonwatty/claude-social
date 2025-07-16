@@ -1,18 +1,17 @@
 # Make every commit a 'thank you' 🤝 with Claude Code
 
-Let Claude Code draft thank you tweets to open source projects and maintainers on every git commit.  Never again forget to thank those people and projects on which your liveliohood depends.
+I kept forgetting to publically thank the many open source projects and maintainers that drive my professional and side-project life.  So I've enlisted Claude Code to help remind me.
 
-## Why This Exists
+### The project in a nutshell
 
-I'm an idiot and kept forgetting to publically thank the many open source projects and maintainers that drive my professional and side-project life.  So I've enlisted Claude Code to help remind me.
+This project (root CLAUDE.md instructions / custom slash command) helps you remember to say "thank you" by automatically drafting appreciation tweets whenever you create a commit that:
 
-This project helps you remember to say "thank you" by automatically drafting appreciation tweets whenever you create a commit that:
 - Adds new packages to your projects
 - Makes significant use of existing packages (performance improvements, bug fixes)
 - Solves complex problems using open source tools
 - Discovers creative ways to combine packages
 
-Claude creates draft tweets - little reminders for you to show appreciation - that you can fine-tune and make your own. 
+Claude Code creates draft tweets - little reminders for you to show appreciation - that you can fine-tune and make your own.
 
 ### Example Tweet Drafts
 
